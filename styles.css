@@ -230,11 +230,16 @@ iframe{
 .card-container::-webkit-scrollbar {
     display: none;
 }
-
 .cursor-dot{
-    width:30px;
-    height:30px;
-    border:2px solid hsla(0, 0%, 100%, 0.5);
+    width:5px;
+    height:5px;
+    background-color: hsla(0, 0%, 0%, 0.7);
+}
+
+.cursor-outline{
+    width:60px;
+    height:60px;
+    border:2px solid hsla(0, 0%, 0%, 0.7);
 }
 .cursor-dot,
 .cursor-outline{
