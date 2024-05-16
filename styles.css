@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    cursor: none;
+}
+
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 20px;
+    
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.navbar-logo img {
+    height: 40px;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.mar-left {
+    margin-left: 20px;
+}
+
+.inv{
+    filter: invert(1);
+    position: relative;
+    top: 2px;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 5px;
+    font-size: 1.15rem;
+    margin-left: 20px;
+    font-family: Nav-Font;
+}
+
+/* Individual styles for each link (if needed) */
+.nav-work {
+
+}
+.nav-studio {}
+.nav-services {}
+.nav-sectors {}
+.nav-insights {}
+.nav-careers {}
+
+.start-project-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 40px;
+    text-decoration: none;
+}
+.start-project-arr {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 20px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.header-text{
+    position: relative;
+    top: 20%;
+    width: 50%;
+    margin: 0px 70px;
+    padding-right: 100px;
+    font-size: 1.5rem;
+    max-width: 100%;
+    line-height: 2.1875rem;
+    font-family: Nav-Font;
+}
+.header-video {
+    width: 50%;
+    margin: 0;
+    padding: 0%;
+}
+.header-btn{
+    text-decoration-color: #000;
+    text-decoration-line: underline;
+    
+}
+
+.header-text a:visited{
+    color: black;
+}
+.header-text a{
+    font-size: 20px;
+}
+iframe{
+  position: relative;
+  left: 30%;
+  ;
+  scale: 2.2;
+  aspect-ratio: 16/9;
+  width: auto;
+  height: auto;
+  min-height: 100%;
+  min-width: 100%;
+  pointer-events: none;
+  overflow : hidden;
+  filter: brightness(40%);
+}
+
+.scroll-container {
+    position: absolute;
+    top: 5%; /* Adjust based on where you want the text to appear */
+    left: 0;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    pointer-events: none; /* Allow clicking through the scrolling text */
+    z-index: 1000; /* Ensure the scrolling text is above other elements */
+}
+
+.scroll-text {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 350px;
+    opacity: 1; /* Adjust the transparency as needed */
+    color: rgba(0, 0, 0, 0.8); /* Adjust the color and transparency */
+    position: relative;
+    will-change: transform;
+}
+.navbar-logo{
+    font-size: 2rem;
+}
+
+.start-project-btn:hover + .inv,
+.start-project-arr:hover + .inv {
+     /* Smooth transition */
+    transform: rotate(45deg); /* Rotate 90 degrees on hover */
+}
+@font-face {
+    font-family: "Nav-Font";
+    src: url(TWKEverett-Light.otf);
+}
+.middle-text {
+    background-color: #f8f8f8; /* Background color */
+}
+
+.middle-text-container {
+    display: flex;
+    justify-content: center;
+}
+
+.middle-text-desc {
+    font-size: 3.4rem; /* Font size */
+    color: black; /* Text color */
+    line-height: 1.5; /* Line height */
+    text-align: center; /* Text alignment */
+    font-family: Playfair Display; /* Font family */
+    margin: 100px 70px;
+}
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.work-container{
+    padding-top: 70px;
+    display: flex;
+    overflow: hidden;
+    margin-left: 70px;
+    flex-direction: column;
+}
+.work-text{
+    font-family: Nav-Font;
+    font-size: 23rem;
+    margin-bottom: 50px;
+}
+.card-container {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding-bottom: 60px; 
+    scrollbar-width: none; /* Hide default scrollbar */
+    -ms-overflow-style: none; /* Hide default scrollbar for IE/Edge */
+    height: auto;
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 40rem; /* Set fixed width for each card */
+    height: 40rem;
+    margin-right: 20px; /* Add space between cards */
+}
+.card img {
+    width: 85%;
+    height: 85%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.card-text {
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: Playfair Display;
+    margin: 10px 0px;
+    width: 85%  ;
+}
+
+/* Hide scrollbar for Firefox */
+.card-container::-webkit-scrollbar {
+    display: none;
+}
+.cursor-dot{
+    width:5px;
+    height:5px;
+    background-color: hsla(0, 0%, 0%, 0.7);
+}
+
+.cursor-outline{
+    width:60px;
+    height:60px;
+    border:2px solid hsla(0, 0%, 0%, 0.7);
+}
+.cursor-dot,
+.cursor-outline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius:50%;
+    z-index:1200;
+    pointer-events:none;
+}
